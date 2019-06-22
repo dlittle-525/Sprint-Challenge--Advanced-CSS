@@ -1,1 +1,15 @@
 // Mixins Here
+
+.flex(@flow:row wrap,@justify:space-between,@align:center){
+    display: flex;
+	flex-flow:@flow;
+	justify-content:@justify;
+	align-items:@align
+}
+
+.button(@width, @bgcolor, @color, @radius){
+    width: @width;
+    background-color: @bgcolor;
+    color: @color;
+    border-radius: @radius;
+}
